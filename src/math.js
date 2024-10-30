@@ -17,7 +17,14 @@ function somaDobroNumerosParesFuncional(numeros){
  * @param {Array} numeros vetor com os números desejados
  */
 function somaDobroNumerosParesProcedural(numeros){
-    // TODO: Insira seu código estruturado aqui   
+    // TODO: Insira seu código estruturado aqui
+    let soma = 0;
+    for (const numero of numeros) {
+        if (numero % 2 === 0){
+            soma += (numero * 2);
+        }
+    }
+    return soma;
 }
 
 export { somaDobroNumerosParesFuncional, somaDobroNumerosParesProcedural };
